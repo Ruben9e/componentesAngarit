@@ -1,0 +1,10 @@
+<button (click)="mostrarDetalle=!mostrarDetalle">Mostrar Detalle</button>
+
+<div *ngIf="mostrarDetalle">
+    <h2>id: {{product.id}}</h2>
+    <h2>producto: {{product.nombre}}</h2>
+    <h2>precio: {{product.precio}}</h2>
+    <img src="{{product.link}}" alt="">
+    <h2>marca: {{product.descipcion}}</h2>
+    <hr>
+</div>

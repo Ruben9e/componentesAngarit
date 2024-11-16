@@ -1,0 +1,99 @@
+/* Estilo para el contenedor del formulario */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Título del formulario */
+  .form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  
+  /* Estilo general para los grupos de formulario */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Etiquetas de los campos */
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  /* Campos de texto y área de texto */
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.95em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  /* Estilo al enfocar los campos */
+  .form-group input[type="text"]:focus,
+  .form-group input[type="email"]:focus,
+  .form-group textarea:focus {
+    border-color: #ff6347;
+  }
+  
+  /* Botón de envío */
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  /* Efecto hover en el botón */
+  .submit-btn:hover {
+    background-color: #e5533c;
+    transform: translateY(-2px);
+  }
+  
+  /* Efecto de clic en el botón */
+  .submit-btn:active {
+    background-color: #cc4a32;
+    transform: translateY(0);
+  }
+  
+  /* Estilo general del formulario en pantallas pequeñas */
+  @media (max-width: 480px) {
+    .form-container {
+      padding: 15px;
+    }
+  
+    .form-container h2 {
+      font-size: 1.6em;
+    }
+  
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+      font-size: 0.9em;
+    }
+  
+    .submit-btn {
+      font-size: 0.95em;
+      padding: 10px;
+    }
+  }
