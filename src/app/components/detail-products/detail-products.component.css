@@ -1,8 +1,18 @@
-div {
+.content-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px;
 
-    text-align: center;
-        
+    .content-text {
+        text-align: center;
+        width: 500px;
+    }
+    
     img{
-        width: 400px;
+       width: 400px;
+       border-radius: 10px;
+       box-shadow: 5px 5px 10px 5px rgb(160, 152, 152);
     }
 }

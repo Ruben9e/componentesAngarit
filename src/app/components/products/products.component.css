@@ -4,16 +4,15 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px;
 }
 
 .product-card {
-    border: 2px solid rgb(197, 21, 21);
     height: 500px;
     width: 330px;
-    border-radius: 10%;
+    border-radius: 30px;
     text-align: center;
+    box-shadow: 5px 5px 5px 5px  rgb(163, 158, 158);
 
     &:hover {
         scale: 1.1;

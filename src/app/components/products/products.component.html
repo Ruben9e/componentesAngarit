@@ -1,9 +1,8 @@
 <div class="content-card">
-    <div class="product-card" *ngFor="let product of products">
+    <div class="product-card" *ngFor="let product of products" [routerLink]="['/detail-products',product.id]">
         <h2>id: {{product.id}}</h2>
         <h2>producto: {{product.nombre}}</h2>
         <img src="{{product.link}}" alt="">
         <h2>precio: {{product.precio}}</h2>
-        <button  [routerLink]="['/detail-products',product.id]"> ver mas</button>
     </div>
 </div>
