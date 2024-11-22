@@ -1,6 +1,11 @@
 .footer {
-    background-color: #752a2a;
-    color: #fff;
+  background: 
+  linear-gradient(to bottom right, white 100%, lightgray ) 0% 0% / 50% 50%, 
+  linear-gradient(to bottom left, lightgray  10%, white 80%) 100% 0% / 50% 50%, 
+  linear-gradient(to top right, lightgray 10%, white 80%) 0% 100% / 50% 50%, 
+  linear-gradient(to top left, lightgray 10%, white 80%) 100% 100% / 50% 50%;
+background-repeat: no-repeat;
+    color: #000000;
     padding: 20px;
     text-align: center;
   }
@@ -19,11 +24,11 @@
   }
   
   .footer-links li a {
-    color: #b1e4ca6c;
+    color: #000000;
     text-decoration: none;
     transition: color 0.3s;
   }
   
   .footer-links li a:hover {
-    color: #fff;
+    color: #ff0000;
   }

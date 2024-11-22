@@ -1,9 +1,11 @@
 
-.content-home {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+.content-home{
     display: flex;
 
     h2 {
-        color: brown;
+        color: rgb(207, 27, 27);
     }
     img {
         width: 50%;
@@ -16,3 +18,5 @@
     text-align: center;
     margin: 50px;
 }
+
+

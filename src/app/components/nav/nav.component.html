@@ -1,9 +1,19 @@
 <nav class="navbar">
-    <div class="navbar-logo">Metal Maked</div>
+  <div class="navbar-logo">
+    <img src="icons/200 x 400.png" alt="">
+  </div>
+  <div class="navbar-center">
+    <input type="search" placeholder="" class="barra-busqueda" /> 
     <ul class="navbar-menu">
       <li><a [routerLink]="['/']">Inicio</a></li>
-      <li><a [routerLink]="['/register']">Registro</a></li>
-      <li><a [routerLink]="['/login']">Login</a></li>
       <li><a [routerLink]="['/products']">Productos</a></li>
+      <li><a href="">Contacto</a></li>
     </ul>
-  </nav>
+  </div>
+  <ul class="navbar-login">
+    <li><a [routerLink]="['/login']">inicio de secion </a></li>
+    <p>|</p>
+    <li><a [routerLink]="['/register']">Registro</a></li>
+    <img src="icons/carrito.png" alt="">
+  </ul>
+</nav>

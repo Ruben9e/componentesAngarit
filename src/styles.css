@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importa las fuentes de Google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Aplica la fuente Roboto para todo el cuerpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Aplica la fuente Montserrat a los encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Estilo adicional para mejorar la legibilidad */
+p {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
