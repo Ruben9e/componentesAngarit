@@ -3,7 +3,7 @@
     <img src="icons/200 x 400.png" alt="">
   </div>
   <div class="navbar-center">
-    <input type="search" placeholder="" class="barra-busqueda" /> 
+    <input type="search" placeholder="" class="barra-busqueda" />
     <ul class="navbar-menu">
       <li><a [routerLink]="['/']">Inicio</a></li>
       <li><a [routerLink]="['/products']">Productos</a></li>
@@ -11,9 +11,10 @@
     </ul>
   </div>
   <ul class="navbar-login">
-    <li><a [routerLink]="['/login']">inicio de secion </a></li>
+    <li><a [routerLink]="['/login']">Inicio de sesión</a></li>
     <p>|</p>
     <li><a [routerLink]="['/register']">Registro</a></li>
-    <img src="icons/carrito.png" alt="">
+    <!-- Enlace al carrito -->
+    <li><a [routerLink]="['/carrito']"><img src="icons/carrito.png" alt="Carrito"></a></li>
   </ul>
 </nav>

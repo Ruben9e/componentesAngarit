@@ -2,7 +2,10 @@
     <div class="product-card" *ngFor="let product of products" [routerLink]="['/detail-products',product.id]">
         <h2>id: {{product.id}}</h2>
         <h2>producto: {{product.nombre}}</h2>
-        <img src="{{product.link}}" alt="">
+        <img src="{{product.link}}" alt="{{ product.nombre }}">
         <h2>precio: {{product.precio}}</h2>
+        
+        <!-- Botón Añadir al carrito con stopPropagation -->
+        <button class="btn-add-to-cart" (click)="agregarAlCarrito(product); $event.stopPropagation()">Añadir al carrito</button>
     </div>
 </div>

@@ -1,0 +1,26 @@
+<app-nav></app-nav>
+<div class="carrito">
+    <h1>Carrito de Compras</h1>
+
+    <!-- Mostrar mensaje si el carrito está vacío -->
+    <div *ngIf="carrito.length === 0">
+        <p>Tu carrito está vacío</p>
+    </div>
+
+    <!-- Mostrar los productos del carrito -->
+    <div *ngIf="carrito.length > 0">
+        <div *ngFor="let producto of carrito" class="producto">
+            <img [src]="producto.link" alt="{{ producto.nombre }}" class="producto-img" />
+            <div class="producto-info">
+                <h2>{{ producto.nombre }}</h2>
+                <h3>{{ producto.precio | currency }}</h3>
+                <button (click)="eliminarDelCarrito(producto.id)">Eliminar</button>
+            </div>
+        </div>
+
+        <!-- Botón para vaciar el carrito -->
+        <button (click)="vaciarCarrito()">Vaciar carrito</button>
+    </div>
+</div>
+
+<app-footer></app-footer>
